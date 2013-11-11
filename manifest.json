@@ -1,0 +1,22 @@
+{
+  "name": "xiami downloader",
+  "version": "0.9",
+  "description": "I can't has cheezburger!",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    
+    "http://*/*",
+    "https://*/*"
+  ],
+  "browser_action": {
+    "default_icon" : "images/icon.png",
+  },
+  "background": {
+    "page": "background.html"
+  },
+  "sandbox": {
+    "pages": ["views/ruleList.html"]
+  },
+  "manifest_version": 2
+}
